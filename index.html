@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ankit Pudasaini | Tech Personal Website</title>
+    <style>
+        :root {
+            --bg-color: #0d1117;
+            --card-bg: #161b22;
+            --text-main: #c9d1d9;
+            --text-heading: #ffffff;
+            --accent-color: #58a6ff;
+            --border-color: #30363d;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            margin: 0;
+            padding: 40px 20px;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        header h1 {
+            color: var(--text-heading);
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: var(--accent-color);
+            color: #0d1117;
+            padding: 10px 20px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: opacity 0.2s;
+        }
+
+        .btn:hover {
+            opacity: 0.9;
+        }
+
+        section {
+            margin-bottom: 40px;
+        }
+
+        h2 {
+            color: var(--text-heading);
+            border-bottom: 2px solid var(--border-color);
+            padding-bottom: 8px;
+            margin-top: 40px;
+            margin-bottom: 20px;
+        }
+
+        p {
+            margin-bottom: 15px;
+        }
+
+        /* Skills Tags */
+        .skills-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            list-style: none;
+            padding: 0;
+        }
+
+        .skills-list li {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            color: var(--accent-color);
+        }
+
+        
+        /* Contact Form */
+        form {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            padding: 30px;
+            border-radius: 8px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            color: var(--text-heading);
+            font-weight: 500;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            background-color: #0d1117;
+            border: 1px solid var(--border-color);
+            border-radius: 6px;
+            color: var(--text-main);
+            box-sizing: border-box;
+        }
+
+        input:focus, textarea:focus {
+            outline: none;
+            border-color: var(--accent-color);
+        }
+
+        /* Connect / Social Grid */
+        .connect-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+            gap: 15px;
+        }
+
+        .connect-card {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            padding: 15px;
+            border-radius: 6px;
+            text-align: center;
+        }
+
+        .connect-card a {
+            color: var(--accent-color);
+            text-decoration: none;
+            font-size: 0.9rem;
+            display: block;
+            margin-top: 8px;
+        }
+
+        .connect-card a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 60px;
+            padding-top: 20px;
+            border-top: 1px solid var(--border-color);
+            font-size: 0.85rem;
+            color: #8b949e;
+        }
+
+        footer a {
+            color: var(--text-main);
+            text-decoration: none;
+            margin: 0 5px;
+        }
+
+        footer a:hover {
+            color: var(--accent-color);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Hero Section -->
+        <header>
+            <h1>Hi, I'm Ankit Pudasaini</h1>
+            <a href="#contact" class="btn">WORK WITH ME</a>
+        </header>
+
+        <!-- About Section -->
+        <section>
+            <h2>About Ankit Pudasaini</h2>
+            <p>I am a passionate web developer dedicated to building clean, responsive, and user-friendly websites. My learning journey began with mastering core building blocks like <strong>HTML and CSS</strong>, growing into modern web design principles.</p>
+        </section>
+
+        <!-- Credentials & Education -->
+        <section>
+            <h2>Credentials & Education</h2>
+            <div class="credential-card">
+                <h3>Grade 11 in Computer Science</h3>
+                <p>National School of Sciences</p>
+                <div class="date">2026 - 2027</div>
+            </div>
+        </section>
+
+        <!-- Skills & Core Focus -->
+        <section>
+            <h2>Skills & Core Focus</h2>
+            <ul class="skills-list">
+                <li>HTML & CSS</li>
+                <li>Basic C Programming</li>
+                <li>Modern Web Design</li>
+            </ul>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <h2>Let's Build Together</h2>
+            <form>
+                <div class="form-group">
+                    <label>Your Name*</label>
+                    <input type="text" placeholder="Enter your full name" required>
+                </div>
+                <div class="form-group">
+                    <label>Your Email*</label>
+                    <input type="email" placeholder="name@example.com" required>
+                </div>
+                <div class="form-group">
+                    <label>Your Message*</label>
+                    <textarea rows="4" placeholder="Tell me about your project or inquiry..." required></textarea>
+                </div>
+                <button type="submit" class="btn" style="border: none; cursor: pointer;">SEND MESSAGE</button>
+            </form>
+        </section>
+
+        <!-- Connect Directly Section -->
+        <section>
+            <h2>Connect Directly</h2>
+            <div class="connect-grid">
+                <div class="connect-card">
+                    <strong>Instagram</strong>
+                    <p style="margin: 5px 0; font-size: 0.85rem; color: #8b949e;">@ankit_siddhartha</p>
+                    <a href="#">Follow &rarr;</a>
+                </div>
+                <div class="connect-card">
+                    <strong>LinkedIn</strong>
+                    <p style="margin: 5px 0; font-size: 0.85rem; color: #8b949e;">Ankit Pudasaini</p>
+                    <a href="#">Connect &rarr;</a>
+                </div>
+                <div class="connect-card">
+                    <strong>Facebook</strong>
+                    <p style="margin: 5px 0; font-size: 0.85rem; color: #8b949e;">Nepali Ankit Pudasaini</p>
+                    <a href="#">Profile &rarr;</a>
+                </div>
+                <div class="connect-card">
+                    <strong>WhatsApp</strong>
+                    <p style="margin: 5px 0; font-size: 0.85rem; color: #8b949e;">+977 9743750235</p>
+                    <a href="#">Chat &rarr;</a>
+                </div>
+                <div class="connect-card">
+                    <strong>Email Me</strong>
+                    <p style="margin: 5px 0; font-size: 0.80rem; color: #8b949e; word-break: break-all;">ankitpudasaini01@gmail.com</p>
+                    <a href="#">Send Mail &rarr;</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <p>&copy; 2026 Ankit Pudasaini. All Rights Reserved.</p>
+            <p>
+                <a href="#">Terms & Support</a> | <a href="#">Privacy Policy</a>
+            </p>
+        </footer>
+    </div>
+
+</body>
+</html>
+
